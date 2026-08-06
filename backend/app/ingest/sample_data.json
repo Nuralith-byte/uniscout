@@ -1,0 +1,207 @@
+{
+  "_comment": "ДЕМО-ДАННЫЕ для локальной разработки. Цифры приблизительные и НЕ проверены — перед публикацией каждый вуз проходит ручную курацию по официальному сайту (см. docs/curation_guide_ru.md). data_source='sample' помечает их как черновые.",
+  "universities": [
+    {
+      "slug": "mit",
+      "name_en": "Massachusetts Institute of Technology",
+      "name_ru": "Массачусетский технологический институт",
+      "aliases": ["МИТ", "MIT", "Массачусетс"],
+      "country_code": "US",
+      "city": "Cambridge, MA",
+      "website_url": "https://www.mit.edu",
+      "apply_url": "https://apply.mitadmissions.org",
+      "application_system": "direct",
+      "description_ru": "Ведущий технологический вуз мира. Need-blind для международных студентов — полная стипендия при необходимости.",
+      "rankings": {"qs": 1},
+      "requirements": {"degree_level": "bachelor", "sat_p25": 1520, "sat_p75": 1580, "sat_required": "required", "ielts_min": 7.5, "toefl_ibt_min": 90, "extracurriculars_weight": "important", "notes_ru": "Очень сильный акцент на олимпиады и проекты."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 61990, "currency": "USD"},
+        {"cost_type": "application_fee", "amount": 75, "currency": "USD"},
+        {"cost_type": "living_estimate_year", "amount": 21000, "currency": "USD"}
+      ],
+      "deadlines": [
+        {"round_name": "Early Action", "deadline_date": "2026-11-01", "intake_term": "Fall 2027"},
+        {"round_name": "Regular", "deadline_date": "2027-01-06", "intake_term": "Fall 2027"}
+      ]
+    },
+    {
+      "slug": "kaist",
+      "name_en": "KAIST",
+      "name_ru": "КАИСТ (Корейский институт передовых технологий)",
+      "aliases": ["каист", "KAIST", "Корейский институт науки и технологий"],
+      "country_code": "KR",
+      "city": "Daejeon",
+      "website_url": "https://www.kaist.ac.kr",
+      "apply_url": "https://apply.kaist.ac.kr",
+      "application_system": "direct",
+      "description_ru": "Топ-вуз Кореи по инженерии. Обучение на английском, щедрые стипендии для иностранцев, SAT не обязателен.",
+      "rankings": {"qs": 53},
+      "requirements": {"degree_level": "bachelor", "sat_required": "optional", "ielts_min": 6.5, "toefl_ibt_min": 83, "extracurriculars_weight": "considered", "notes_ru": "Принимают без SAT — по школьным оценкам, мотивации и рекомендациям."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 8000000, "currency": "KRW"},
+        {"cost_type": "application_fee", "amount": 80, "currency": "USD"},
+        {"cost_type": "living_estimate_year", "amount": 9000000, "currency": "KRW"}
+      ],
+      "deadlines": [
+        {"round_name": "Early", "deadline_date": "2026-09-11", "intake_term": "Spring 2027"},
+        {"round_name": "Regular", "deadline_date": "2027-01-08", "intake_term": "Fall 2027"}
+      ]
+    },
+    {
+      "slug": "nu-kz",
+      "name_en": "Nazarbayev University",
+      "name_ru": "Назарбаев Университет",
+      "aliases": ["НУ", "Назарбаев"],
+      "country_code": "KZ",
+      "city": "Astana",
+      "website_url": "https://nu.edu.kz",
+      "apply_url": "https://admissions.nu.edu.kz",
+      "application_system": "direct",
+      "description_ru": "Для сравнения с зарубежными: англоязычный вуз в Казахстане, Foundation-год, гранты покрывают обучение.",
+      "requirements": {"degree_level": "bachelor", "sat_required": "optional", "ielts_min": 6.5, "toefl_ibt_min": 79, "extracurriculars_weight": "considered", "notes_ru": "Принимают IELTS/SAT или внутренние экзамены NUET."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 7000000, "currency": "KZT"},
+        {"cost_type": "application_fee", "amount": 0, "currency": "KZT"}
+      ],
+      "deadlines": [{"round_name": "Main", "deadline_date": "2027-03-01", "intake_term": "Fall 2027"}]
+    },
+    {
+      "slug": "university-of-toronto",
+      "name_en": "University of Toronto",
+      "name_ru": "Университет Торонто",
+      "aliases": ["Торонто", "UofT"],
+      "country_code": "CA",
+      "city": "Toronto",
+      "website_url": "https://www.utoronto.ca",
+      "apply_url": "https://future.utoronto.ca/apply",
+      "application_system": "direct",
+      "description_ru": "Крупнейший вуз Канады. SAT не обязателен для казахстанского аттестата, важен средний балл.",
+      "rankings": {"qs": 25},
+      "requirements": {"degree_level": "bachelor", "sat_required": "not_used", "ielts_min": 6.5, "toefl_ibt_min": 89, "gpa_min": 4.5, "extracurriculars_weight": "considered", "notes_ru": "Оценивают аттестат и ЕНТ; для CS/инженерии конкурс существенно выше."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 61720, "currency": "CAD"},
+        {"cost_type": "application_fee", "amount": 180, "currency": "CAD"},
+        {"cost_type": "living_estimate_year", "amount": 20000, "currency": "CAD"}
+      ],
+      "deadlines": [{"round_name": "Regular", "deadline_date": "2027-01-15", "intake_term": "Fall 2027"}]
+    },
+    {
+      "slug": "tum",
+      "name_en": "Technical University of Munich",
+      "name_ru": "Технический университет Мюнхена",
+      "aliases": ["ТУМ", "TUM", "Мюнхен"],
+      "country_code": "DE",
+      "city": "Munich",
+      "website_url": "https://www.tum.de",
+      "apply_url": "https://www.tum.de/en/studies/application",
+      "application_system": "direct",
+      "description_ru": "Топ-вуз Германии. Обучение почти бесплатное (семестровый взнос), но нужен Studienkolleg или 1-2 курса вуза для казахстанского аттестата.",
+      "rankings": {"qs": 28},
+      "requirements": {"degree_level": "bachelor", "sat_required": "not_used", "ielts_min": 6.5, "extracurriculars_weight": "none", "notes_ru": "Для бакалавриата на немецком нужен TestDaF/DSH. Казахстанский аттестат требует Studienkolleg."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 6000, "currency": "EUR"},
+        {"cost_type": "application_fee", "amount": 0, "currency": "EUR"},
+        {"cost_type": "living_estimate_year", "amount": 12000, "currency": "EUR"}
+      ],
+      "deadlines": [{"round_name": "Winter intake", "deadline_date": "2027-05-31", "intake_term": "Winter 2027/28"}]
+    },
+    {
+      "slug": "ucl",
+      "name_en": "University College London",
+      "name_ru": "Университетский колледж Лондона",
+      "aliases": ["УКЛ", "UCL", "Лондон"],
+      "country_code": "GB",
+      "city": "London",
+      "website_url": "https://www.ucl.ac.uk",
+      "apply_url": "https://www.ucas.com",
+      "application_system": "ucas",
+      "description_ru": "Топ-10 мира, подача через UCAS. Казахстанский аттестат обычно требует Foundation-год или A-levels/IB.",
+      "rankings": {"qs": 9},
+      "requirements": {"degree_level": "bachelor", "sat_required": "not_used", "ielts_min": 7.0, "extracurriculars_weight": "considered", "notes_ru": "Через UCAS (до 5 вузов одной заявкой, ~28 GBP). Нужен Foundation или IB/A-levels."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 31000, "currency": "GBP"},
+        {"cost_type": "application_fee", "amount": 28, "currency": "GBP"},
+        {"cost_type": "living_estimate_year", "amount": 16000, "currency": "GBP"}
+      ],
+      "deadlines": [{"round_name": "UCAS Equal Consideration", "deadline_date": "2027-01-27", "intake_term": "Fall 2027"}]
+    },
+    {
+      "slug": "bogazici",
+      "name_en": "Bogazici University",
+      "name_ru": "Босфорский университет",
+      "aliases": ["Богазичи", "Босфор", "Bogazici"],
+      "country_code": "TR",
+      "city": "Istanbul",
+      "website_url": "https://bogazici.edu.tr",
+      "apply_url": "https://intadmissions.bogazici.edu.tr",
+      "application_system": "direct",
+      "description_ru": "Сильнейший англоязычный вуз Турции. Принимает SAT, низкая стоимость, много казахстанцев.",
+      "requirements": {"degree_level": "bachelor", "sat_min": 1300, "sat_required": "required", "ielts_min": 6.5, "toefl_ibt_min": 79, "extracurriculars_weight": "none", "notes_ru": "Конкурс по SAT; для стипендий Türkiye Burslari — отдельная подача."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 60000, "currency": "TRY"},
+        {"cost_type": "application_fee", "amount": 30, "currency": "USD"}
+      ],
+      "deadlines": [{"round_name": "International", "deadline_date": "2027-06-15", "intake_term": "Fall 2027"}]
+    },
+    {
+      "slug": "hku",
+      "name_en": "University of Hong Kong",
+      "name_ru": "Гонконгский университет",
+      "aliases": ["ГКУ", "HKU", "Гонконг"],
+      "country_code": "HK",
+      "city": "Hong Kong",
+      "website_url": "https://www.hku.hk",
+      "apply_url": "https://admissions.hku.hk",
+      "application_system": "direct",
+      "description_ru": "Топ-вуз Азии, обучение на английском, щедрые стипендии для международных студентов с высоким SAT.",
+      "rankings": {"qs": 17},
+      "requirements": {"degree_level": "bachelor", "sat_min": 1350, "sat_p25": 1400, "sat_p75": 1550, "sat_required": "required", "ielts_min": 6.5, "toefl_ibt_min": 93, "extracurriculars_weight": "considered"},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 182000, "currency": "HKD"},
+        {"cost_type": "application_fee", "amount": 450, "currency": "HKD"}
+      ],
+      "deadlines": [
+        {"round_name": "Early", "deadline_date": "2026-11-18", "intake_term": "Fall 2027"},
+        {"round_name": "Main", "deadline_date": "2027-01-14", "intake_term": "Fall 2027"}
+      ]
+    },
+    {
+      "slug": "asu",
+      "name_en": "Arizona State University",
+      "name_ru": "Университет штата Аризона",
+      "aliases": ["АСУ", "ASU", "Аризона"],
+      "country_code": "US",
+      "city": "Tempe, AZ",
+      "website_url": "https://www.asu.edu",
+      "apply_url": "https://admission.asu.edu/apply",
+      "application_system": "common_app",
+      "description_ru": "Большой государственный вуз с высоким процентом зачисления и стипендиями за академические успехи — реалистичный вариант.",
+      "requirements": {"degree_level": "bachelor", "sat_required": "optional", "ielts_min": 6.0, "toefl_ibt_min": 61, "extracurriculars_weight": "none", "notes_ru": "Admission rate ~90%. Merit-стипендии считаются автоматически по GPA/SAT."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 33000, "currency": "USD"},
+        {"cost_type": "application_fee", "amount": 85, "currency": "USD"},
+        {"cost_type": "living_estimate_year", "amount": 14000, "currency": "USD"}
+      ],
+      "deadlines": [{"round_name": "Rolling", "deadline_date": "2027-05-01", "intake_term": "Fall 2027"}]
+    },
+    {
+      "slug": "snu",
+      "name_en": "Seoul National University",
+      "name_ru": "Сеульский национальный университет",
+      "aliases": ["СНУ", "SNU", "Сеул"],
+      "country_code": "KR",
+      "city": "Seoul",
+      "website_url": "https://www.snu.ac.kr",
+      "apply_url": "https://admission.snu.ac.kr",
+      "application_system": "direct",
+      "description_ru": "Главный вуз Кореи. Часть программ на английском; для корееязычных нужен TOPIK.",
+      "rankings": {"qs": 31},
+      "requirements": {"degree_level": "bachelor", "sat_required": "optional", "ielts_min": 6.0, "toefl_ibt_min": 80, "extracurriculars_weight": "considered", "extra": {"topik_level": 3}, "notes_ru": "Для программ на корейском — TOPIK 3+; стипендии GKS покрывают всё."},
+      "costs": [
+        {"cost_type": "tuition_year", "amount": 6000000, "currency": "KRW"},
+        {"cost_type": "application_fee", "amount": 70000, "currency": "KRW"}
+      ],
+      "deadlines": [{"round_name": "International", "deadline_date": "2026-10-02", "intake_term": "Spring 2027"}]
+    }
+  ]
+}

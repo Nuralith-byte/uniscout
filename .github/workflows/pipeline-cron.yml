@@ -1,0 +1,35 @@
+# Еженедельный пайплайн: курсы валют + импорт курации из Google Sheet.
+# Бонус: регулярное подключение к БД не даёт Supabase free-проекту заснуть (пауза после ~7 дней).
+# Секреты в Settings -> Secrets and variables -> Actions: DATABASE_URL, SHEET_CSV_URLS (опц.)
+name: data-pipeline
+
+on:
+  schedule:
+    - cron: '0 3 * * 1' # каждый понедельник 03:00 UTC (09:00 Астана)
+  workflow_dispatch: {} # ручной запуск из вкладки Actions
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        working-directory: backend
+        run: pip install -r requirements.txt
+      - name: Update FX rates
+        working-directory: backend
+        env:
+          ENV: prod
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python -m app.ingest.update_fx
+      - name: Import curation sheet
+        if: ${{ secrets.SHEET_CSV_URLS != '' }}
+        working-directory: backend
+        env:
+          ENV: prod
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SHEET_CSV_URLS: ${{ secrets.SHEET_CSV_URLS }}
+        run: python -m app.ingest.import_sheet
